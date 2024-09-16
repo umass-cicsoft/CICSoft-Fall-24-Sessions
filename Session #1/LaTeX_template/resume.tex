@@ -1,0 +1,190 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{fontawesome5}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{mwe}
+\usepackage{wrapfig}
+
+\input{glyphtounicode}
+\usepackage[default]{lato}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------%
+\begin{document}
+
+%-------------------------%
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\definecolor{Black}{RGB}{0, 0, 0}
+\newcommand{\seticon}[1]{\textcolor{Black}{\csname #1\endcsname}}
+
+
+%-------------------------------------------%
+%%%%%%  RESUME STARTS HERE  %%%%%
+
+%----------HEADING----------%
+\begin{tabularx}{\textwidth}{@{} X r @{}}
+    \begin{minipage}[t]{\textwidth}
+        \textbf{\Huge \scshape First Last} \\[0.5em]
+        \href{mailto:firstlast@gmail.com}{\seticon{faEnvelope} firstlast@umass.edu} \quad \small\seticon{faPhone} XXX-XXX-XXXX \\
+        \href{https://www.my-website.com}{\seticon{faGlobe} \underline{my-website.com}} \quad
+        \href{https://www.linkedin.com/in/firstlast}{\seticon{faLinkedin} \underline{linkedin.com/in/firstlast}} \quad
+        \href{https://github.com/firstlast}{\seticon{faGithub} \underline{github.com/firstlast}}
+    \end{minipage} &
+    % \begin{minipage}[t]{2cm}
+    %     \raisebox{-0.5\height}{\includegraphics[width=2.4cm]{assets/profile_photo.jpg}}
+    % \end{minipage}
+\end{tabularx}
+
+%-----------EDUCATION-----------%
+\section{Education}
+    \resumeSubHeadingListStart
+
+    \resumeSubheading
+    {University of Massachusetts Amherst}{Expected May 20XX}
+    {Bachelor of Science in Computer Science (GPA: 4.00 / 4.00)}{Amherst MA}
+    \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework:}  Data Structures and Algorithms (Java)}
+    \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------%
+\section{Experience}
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+    {Company Name 1}{Jan 20XX -- May 20XX}
+    {Software Engineer}{City, State}
+    \resumeItemListStart
+        \resumeItem{Implemented microservices architecture using Node.js and Express, improving API response time by 25\% and reducing server load by 30\%.}
+        \resumeItem{Led a cross-functional team in implementing a new feature using React and Redux, resulting in a 20\% increase in user engagement within the first month.}
+        \resumeItem{Optimized MySQL database queries, reducing page load times by 15\% and enhancing overall application performance.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------%
+\section{Projects}
+\resumeSubHeadingListStart
+
+    \resumeProjectHeading
+    {\textbf{Project Name 1} $|$ \emph{React.js, Angular, Vue.js, Django, Flask, Ruby on Rails}}    {}
+    \resumeItemListStart
+        \resumeItem {Led the development of a microservices-based e-commerce platform using Node.js, resulting in a 40\% increase in daily transactions within the first quarter.}
+        \resumeItem{Designed and deployed a scalable RESTful API using Django and Django REST Framework, achieving a 30\% improvement in data retrieval speed.}
+        \resumeItem{Implemented a real-time chat feature using WebSocket and Socket.io, enhancing user engagement and reducing response time by 20\%.}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+    {\textbf{Project Name 2} $|$ \emph{Spring Boot, Express.js, TensorFlow, PyTorch, jQuery, Bootstrap}}{}
+    \resumeItemListStart
+        \resumeItem{Developed a data visualization dashboard using D3.js, providing stakeholders with real-time insights and improving decision-making processes.}
+        \resumeItem{Built a CI/CD pipeline using Jenkins and Docker, reducing deployment time by 40\% and ensuring consistent and reliable releases.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------%
+\section{Technical Skills}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+	\small{\item{
+		\textbf{Languages}{: Rust, Kotlin, Swift, Go, Scala, TypeScript, R, Perl, Haskell, Groovy, Julia, Dart} \\
+		\textbf{Technologies}{: React.js, Angular, Vue.js, Django, Flask, Ruby on Rails, Spring Boot, Express.js, TensorFlow, PyTorch, jQuery, Bootstrap, Laravel, Flask, ASP.NET, Node.js, Electron, Android SDK, iOS SDK, Symfony} \\
+		\textbf{Concepts}{: Compiler, Operating System, Virtual Memory, Cache Memory, Encryption, Decryption, Artificial Intelligence, Machine Learning, Neural Networks, API, Database Normalization, Agile Methodology, Cloud Computing}
+	}}
+    \end{itemize}
+
+%-----------ACHIEVEMENTS-----------%
+\section{Achievements}
+\begin{itemize} % Start an itemize environment
+    \item Pls Add your Achvements here e.g., Hackathons, Exam Ranks, etc.
+\end{itemize} % End the itemize environment
+
+
+%-----------Social Engagements -----------%
+\section{Social Engagements}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+	\small{\item{
+		\textbf{Vice-President}{: Of Association of Exploration Geophysicist - Student Chapter} \\
+		\textbf{Club Member}{ : at CYBER LABS -tech society} \\
+		\textbf{Volunteer}{: at KARTAVYA - NGO run by students to educate underprivileged childrens.} \\
+  		\textbf{Organisor}{:Concetto'22 (Tech-fest)  Khanan'22 (Geo-Mining fest) .} \\
+        \textbf{Sports-Engagements}{: Badminton(state-level) , chess , cricket ,table-tennis.}
+	}}
+    \end{itemize}
+
+
+%-------------------------------------------%
+\end{document}
