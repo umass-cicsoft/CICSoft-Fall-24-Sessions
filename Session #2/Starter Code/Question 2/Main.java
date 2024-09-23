@@ -3,12 +3,12 @@ import java.util.*;
 public class Main
 {
 	
-	public static String answer(int n, String s)
+	public static int answer(int n, String s)
 	{
 		// Write you code for each test case here
 		    
 		    
-		    return s;
+		    return 0;
 	}
 	
 	// dont modify this code unless you know what you are doing
